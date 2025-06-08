@@ -1,5 +1,7 @@
 \documentclass{exam}
 \usepackage{polski}
+\usepackage{mathtools}
+\usepackage{tabto}
 
 \author{Emilian Zawrotny}
 \title{Zbiór odpowiedzi do kolokwiów z MPwI}
@@ -25,6 +27,38 @@
             \part Nie są ortogonalne, bo $corr(\underline{X}, \underline{Y}) \ne 0$. Nie są też nieskorelowane, bo $\lambda \ne 0$
         \end{parts}
     \end{questions}
-    
+    \section{2023 Termin 1 grupa 1}
+    \begin{questions}
+        \question Nadajniki i odbiorniki
+        \begin{parts}
+            \part $P(O_{01} | N_{00}) = 0.16$ \newline
+                $P(O_{01} | N_{01}) = 0.72$ \newline
+                $P(O_{01} | N_{10}) = 0.02$ \newline
+                $P(O_{01} | N_{11}) = 0.09$
+            \part $P(N_{01} | O_{01}) \approx 0.692$
+        \end{parts}
+        \question Zmienne losowe
+        \begin{parts}
+            \part $P(\underline{X} = k) = {4 \choose k} BER^k (1-BER)^{4-k}$
+            \part $F(x) = \begin{cases}
+                0 & \mbox{dla } x \le 0 \\
+                0.6561 & \mbox{dla } x \in ( 0;1 \rangle \\
+                0.9477 & \mbox{dla } x \in (1; 2\rangle \\
+                0.9963 & \mbox{dla } x \in (2; 3\rangle \\
+                0.9999 & \mbox{dla } x \in (3; 4\rangle \\
+                1 & \mbox{dla } x \ge 4
+            \end{cases}$
+            \part $p(x) = \begin{cases}
+                0.6561 & \mbox{dla } x = 0 \\
+                0.2916 & \mbox{dla } x = 1 \\
+                0.0486 & \mbox{dla } x = 2 \\
+                0.0036 & \mbox{dla } x = 3 \\
+                0.0001 & \mbox{dla } x = 4 \\
+                0 & \mbox{dla pozostałych } x  
+            \end{cases}$
+            \part $P(\underline{X} \ge 2) = 0.0523$
+            \part $P(1 \le \underline{X} < 2) = 0.2916$
+        \end{parts}
+    \end{questions}
 
 \end{document}
